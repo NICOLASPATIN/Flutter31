@@ -26,6 +26,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- t-montes code-viewer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/t-montes/code-viewer@master/code-viewer.js"></script>
 </head>
 
 <body>
@@ -49,7 +53,7 @@
               <li><a href="#">Threading</a></li>
               <li><a href="#">Cache</a></li>
               <li><a href="#">Local Storage</a></li>
-              <li><a href="#">ECn´s</a></li>
+              <li><a href="#">ECn's</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#sonar">Sonar</a></li>
@@ -496,6 +500,13 @@
           <h2>Testimonials</h2>
           <p>What they are saying app_info us</p>
         </header>
+
+        <div class="code-space">
+          <code-viewer title="main.js">
+            console.log("🌝");
+            // more code here
+          </code-viewer>
+        </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-wrapper">
