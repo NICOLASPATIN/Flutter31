@@ -468,7 +468,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# hero Section
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
@@ -566,32 +566,32 @@ section {
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# About
+# app_info
 --------------------------------------------------------------*/
-.about .content {
+.app_info .content {
   background-color: #f6f9ff;
   padding: 40px;
 }
 
-.about h3 {
+.app_info h3 {
   font-size: 14px;
   font-weight: 700;
   color: #4154f1;
   text-transform: uppercase;
 }
 
-.about h2 {
+.app_info h2 {
   font-size: 24px;
   font-weight: 700;
   color: #012970;
 }
 
-.about p {
+.app_info p {
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
 
-.about .btn-read-more {
+.app_info .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -601,20 +601,20 @@ section {
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
-.about .btn-read-more span {
+.app_info .btn-read-more span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .btn-read-more i {
+.app_info .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
+.app_info .btn-read-more:hover i {
   transform: translateX(5px);
 }
 
@@ -813,9 +813,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# architecture
 --------------------------------------------------------------*/
-.services .service-box {
+.architecture .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
@@ -824,7 +824,7 @@ section {
   border-radius: 5px;
 }
 
-.services .service-box .icon {
+.architecture .service-box .icon {
   font-size: 36px;
   padding: 40px 20px;
   border-radius: 4px;
@@ -835,12 +835,12 @@ section {
   transition: 0.3s;
 }
 
-.services .service-box h3 {
+.architecture .service-box h3 {
   color: #444444;
   font-weight: 700;
 }
 
-.services .service-box .read-more {
+.architecture .service-box .read-more {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -849,121 +849,121 @@ section {
   padding: 8px 20px;
 }
 
-.services .service-box .read-more i {
+.architecture .service-box .read-more i {
   line-height: 0;
   margin-left: 5px;
   font-size: 18px;
 }
 
-.services .service-box.blue {
+.architecture .service-box.blue {
   border-bottom: 3px solid #2db6fa;
 }
 
-.services .service-box.blue .icon {
+.architecture .service-box.blue .icon {
   color: #2db6fa;
   background: #dbf3fe;
 }
 
-.services .service-box.blue .read-more {
+.architecture .service-box.blue .read-more {
   color: #2db6fa;
 }
 
-.services .service-box.blue:hover {
+.architecture .service-box.blue:hover {
   background: #2db6fa;
 }
 
-.services .service-box.orange {
+.architecture .service-box.orange {
   border-bottom: 3px solid #f68c09;
 }
 
-.services .service-box.orange .icon {
+.architecture .service-box.orange .icon {
   color: #f68c09;
   background: #fde3c4;
 }
 
-.services .service-box.orange .read-more {
+.architecture .service-box.orange .read-more {
   color: #f68c09;
 }
 
-.services .service-box.orange:hover {
+.architecture .service-box.orange:hover {
   background: #f68c09;
 }
 
-.services .service-box.green {
+.architecture .service-box.green {
   border-bottom: 3px solid #08da4e;
 }
 
-.services .service-box.green .icon {
+.architecture .service-box.green .icon {
   color: #08da4e;
   background: #cffddf;
 }
 
-.services .service-box.green .read-more {
+.architecture .service-box.green .read-more {
   color: #08da4e;
 }
 
-.services .service-box.green:hover {
+.architecture .service-box.green:hover {
   background: #08da4e;
 }
 
-.services .service-box.red {
+.architecture .service-box.red {
   border-bottom: 3px solid #e9222c;
 }
 
-.services .service-box.red .icon {
+.architecture .service-box.red .icon {
   color: #e9222c;
   background: #fef7f8;
 }
 
-.services .service-box.red .read-more {
+.architecture .service-box.red .read-more {
   color: #e9222c;
 }
 
-.services .service-box.red:hover {
+.architecture .service-box.red:hover {
   background: #e9222c;
 }
 
-.services .service-box.purple {
+.architecture .service-box.purple {
   border-bottom: 3px solid #b50edf;
 }
 
-.services .service-box.purple .icon {
+.architecture .service-box.purple .icon {
   color: #b50edf;
   background: #f8e4fd;
 }
 
-.services .service-box.purple .read-more {
+.architecture .service-box.purple .read-more {
   color: #b50edf;
 }
 
-.services .service-box.purple:hover {
+.architecture .service-box.purple:hover {
   background: #b50edf;
 }
 
-.services .service-box.pink {
+.architecture .service-box.pink {
   border-bottom: 3px solid #f51f9c;
 }
 
-.services .service-box.pink .icon {
+.architecture .service-box.pink .icon {
   color: #f51f9c;
   background: #feecf7;
 }
 
-.services .service-box.pink .read-more {
+.architecture .service-box.pink .read-more {
   color: #f51f9c;
 }
 
-.services .service-box.pink:hover {
+.architecture .service-box.pink:hover {
   background: #f51f9c;
 }
 
-.services .service-box:hover h3,
-.services .service-box:hover p,
-.services .service-box:hover .read-more {
+.architecture .service-box:hover h3,
+.architecture .service-box:hover p,
+.architecture .service-box:hover .read-more {
   color: #fff;
 }
 
-.services .service-box:hover .icon {
+.architecture .service-box:hover .icon {
   background: #fff;
 }
 
@@ -1098,9 +1098,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# sonar
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+.sonar #sonar-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -1110,7 +1110,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.sonar #sonar-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -1124,17 +1124,17 @@ section {
   border: 1px solid #fff;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.sonar #sonar-flters li:hover,
+.sonar #sonar-flters li.filter-active {
   color: #4154f1;
   border-color: #4154f1;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.sonar #sonar-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.sonar .sonar-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -1142,7 +1142,7 @@ section {
   background: rgba(255, 255, 255, 0.75);
 }
 
-.portfolio .portfolio-wrap::before {
+.sonar .sonar-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.75);
   position: absolute;
@@ -1155,11 +1155,11 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap img {
+.sonar .sonar-wrap img {
   transition: 1s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.sonar .sonar-wrap .sonar-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -1175,7 +1175,7 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+.sonar .sonar-wrap .sonar-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -1189,7 +1189,7 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.sonar .sonar-wrap .sonar-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -1203,13 +1203,13 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.sonar .sonar-wrap .sonar-info h4 {
   font-size: 20px;
   color: #012970;
   font-weight: 700;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.sonar .sonar-wrap .sonar-info p {
   color: #012970;
   font-weight: 600;
   font-size: 14px;
@@ -1218,12 +1218,12 @@ section {
   margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.sonar .sonar-wrap .sonar-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.sonar .sonar-wrap .sonar-links a {
   color: #fff;
   background: #4154f1;
   margin: 10px 2px;
@@ -1236,20 +1236,20 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a i {
+.sonar .sonar-wrap .sonar-links a i {
   font-size: 24px;
   line-height: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.sonar .sonar-wrap .sonar-links a:hover {
   background: #5969f3;
 }
 
-.portfolio .portfolio-wrap:hover img {
+.sonar .sonar-wrap:hover img {
   transform: scale(1.1);
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.sonar .sonar-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -1257,37 +1257,37 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.sonar .sonar-wrap:hover .sonar-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.sonar .sonar-wrap:hover .sonar-info::before {
   top: 15px;
   left: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.sonar .sonar-wrap:hover .sonar-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# sonar Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.sonar-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.sonar-details .sonar-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.sonar-details .sonar-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.sonar-details .sonar-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1295,16 +1295,16 @@ section {
   border: 1px solid #4154f1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.sonar-details .sonar-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #4154f1;
 }
 
-.portfolio-details .portfolio-info {
+.sonar-details .sonar-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.sonar-details .sonar-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1312,27 +1312,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.sonar-details .sonar-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.sonar-details .sonar-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.sonar-details .sonar-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.sonar-details .sonar-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.sonar-details .sonar-description p {
   padding: 0;
 }
 
@@ -1425,14 +1425,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# security
 --------------------------------------------------------------*/
-.team {
+.security {
   background: #fff;
   padding: 60px 0;
 }
 
-.team .member {
+.security .member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -1441,24 +1441,24 @@ section {
   transition: 0.3s;
 }
 
-.team .member .member-img {
+.security .member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.team .member .member-img:after {
+.security .member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background: url(../img/security-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
 }
 
-.team .member .social {
+.security .member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1469,7 +1469,7 @@ section {
   z-index: 2;
 }
 
-.team .member .social a {
+.security .member .social a {
   transition: color 0.3s;
   color: rgba(1, 41, 112, 0.5);
   margin: 15px 12px;
@@ -1478,33 +1478,33 @@ section {
   text-align: center;
 }
 
-.team .member .social a:hover {
+.security .member .social a:hover {
   color: rgba(1, 41, 112, 0.8);
 }
 
-.team .member .social i {
+.security .member .social i {
   font-size: 18px;
 }
 
-.team .member .member-info {
+.security .member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.team .member .member-info h4 {
+.security .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #012970;
 }
 
-.team .member .member-info span {
+.security .member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: #aaaaaa;
 }
 
-.team .member .member-info p {
+.security .member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1512,12 +1512,12 @@ section {
   color: #5e5e5e;
 }
 
-.team .member:hover {
+.security .member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
-.team .member:hover .social {
+.security .member:hover .social {
   right: 8px;
   opacity: 1;
 }
