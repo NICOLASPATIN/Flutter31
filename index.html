@@ -29,7 +29,7 @@
 
   <!-- t-montes code-viewer -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/gh/t-montes/code-viewer@master/code-viewer.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/t-montes/code-viewer@master/versions/1.0.1/code-viewer.min.js"></script>
 </head>
 
 <body>
@@ -503,8 +503,32 @@
 
         <div class="code-space">
           <code-viewer title="main.js">
-            console.log("🌝");
-            // more code here
+            class _CacheService {
+              Map<String, dynamic> _cache = {};
+            
+              dynamic read(String key) {
+                return _cache[key];
+              }
+            
+              void write(String key, dynamic value) {
+                _cache[key] = value;
+              }
+            
+              void delete(String key) {
+                _cache.remove(key);
+              }
+            
+              bool contains(String key) {
+                return _cache.containsKey(key);
+              }
+    
+              void flush() {
+                _cache.clear();
+              }
+            }
+            
+            final _CacheService cache = _CacheService();
+            
           </code-viewer>
         </div>
 
