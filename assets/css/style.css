@@ -783,9 +783,20 @@ section {
   text-align: center;
 }
 
+.features .feature-icons h4 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+  color: #012970;
+}
+
 @media (max-width: 768px) {
   .features .feature-icons h3 {
     font-size: 28px;
+  }
+  
+  .features .feature-icons h4 {
+    font-size: 20px;
   }
 }
 
