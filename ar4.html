@@ -91,8 +91,9 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
+
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
 
@@ -101,111 +102,142 @@
       <div class="container">
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li><a href="ar2.html">Design</a></li>
-          <li>MVVM</li>
+          <li><a href="ar4.html">Performance</a></li>
         </ol>
-        <h2>Model-View-ViewModel - (MVVM)</h2>
-
+        <h2>Performance</h2>
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Blog Single Section ======= -->
-    <section id="blog" class="blog">
+    <!-- ======= Section: Performance ======= -->
+    <section id="performance" class="testimonials">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
+        <header class="section-header">
+          <h2>Testimonials</h2>
+          <p>What they are saying app_info us</p>
+        </header>
 
-          <div class="col-lg-8 entries">
-
-            <article class="entry entry-single">
-
-              <div class="entry-img">
-                <img src="assets/img/MVVM.png" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a>Enhancing App Development: The Power of MVVM Pattern</a>
-              </h2>
-
-              <div class="entry-content">
-                <p>
-                  We can evidence a use of MVVM patter in the application. This can be figured because of many reasons. This pattern allows the app to be reactive and have 
-                  specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.
-                </p>
-
-                <h3>MVVM in the Blackhole code</h3>
-                <p>
-                  1. The structure of the project shows the main components that a model view 
-                  view model design patter has. However, the project is missing the folder that 
-                  should save de view model. This view model is presented along different other 
-                  components that we will present later.
-                </p>
-                
-                <div class="code-space">
-                  <code-viewer title="main.js">
-                    class _CacheService {
-                      Map _cache = {};
-                    
-                      dynamic read(String key) {
-                        return _cache[key];
-                      }
-                    
-                      void write(String key, dynamic value) {
-                        _cache[key] = value;
-                      }
-                    
-                      void delete(String key) {
-                        _cache.remove(key);
-                      }
-                    
-                      bool contains(String key) {
-                        return _cache.containsKey(key);
-                      }
+        <div class="code-space">
+          <code-viewer title="main.js">
+            class _CacheService {
+              Map<String, dynamic> _cache = {};
             
-                      void flush() {
-                        _cache.clear();
-                      }
-                    }
-                    
-                    final _CacheService cache = _CacheService();
-                  </code-viewer>
-                </div>
-  
-              </div>
-
-            </article><!-- End blog entry -->
-
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <h3 class="sidebar-title">Other Patterns</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li><a href="dto.html">DTO <span>(Data Transfer Object)</span></a></li>
-                  <li><a href="facade.html">Facade</a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-            </div><!-- End sidebar -->
-
-          </div><!-- End blog sidebar -->
-
+              dynamic read(String key) {
+                return _cache[key];
+              }
+            
+              void write(String key, dynamic value) {
+                _cache[key] = value;
+              }
+            
+              void delete(String key) {
+                _cache.remove(key);
+              }
+            
+              bool contains(String key) {
+                return _cache.containsKey(key);
+              }
+    
+              void flush() {
+                _cache.clear();
+              }
+            }
+            
+            final _CacheService cache = _CacheService();
+            
+          </code-viewer>
         </div>
 
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-    </section><!-- End Blog Single Section -->
-    
+    </section>
+  
+  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

@@ -91,8 +91,9 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
+
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
 
@@ -102,110 +103,76 @@
         <ol>
           <li><a href="index.html">Home</a></li>
           <li><a href="ar2.html">Design</a></li>
-          <li>MVVM</li>
         </ol>
-        <h2>Model-View-ViewModel - (MVVM)</h2>
-
+        <h2>Design</h2>
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Blog Single Section ======= -->
-    <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-8 entries">
-
-            <article class="entry entry-single">
-
-              <div class="entry-img">
-                <img src="assets/img/MVVM.png" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a>Enhancing App Development: The Power of MVVM Pattern</a>
-              </h2>
-
-              <div class="entry-content">
-                <p>
-                  We can evidence a use of MVVM patter in the application. This can be figured because of many reasons. This pattern allows the app to be reactive and have 
-                  specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.
-                </p>
-
-                <h3>MVVM in the Blackhole code</h3>
-                <p>
-                  1. The structure of the project shows the main components that a model view 
-                  view model design patter has. However, the project is missing the folder that 
-                  should save de view model. This view model is presented along different other 
-                  components that we will present later.
-                </p>
-                
-                <div class="code-space">
-                  <code-viewer title="main.js">
-                    class _CacheService {
-                      Map _cache = {};
-                    
-                      dynamic read(String key) {
-                        return _cache[key];
-                      }
-                    
-                      void write(String key, dynamic value) {
-                        _cache[key] = value;
-                      }
-                    
-                      void delete(String key) {
-                        _cache.remove(key);
-                      }
-                    
-                      bool contains(String key) {
-                        return _cache.containsKey(key);
-                      }
-            
-                      void flush() {
-                        _cache.clear();
-                      }
-                    }
-                    
-                    final _CacheService cache = _CacheService();
-                  </code-viewer>
-                </div>
+    <!-- ======= Section: Architecture ======= -->
+    <section id="architecture" class="architecture">
+      
+        <div class="container" data-aos="fade-up">
   
+          <header class="section-header">
+            <p>Software Architecture</p>
+          </header>
+  
+          <section id="app_info" class="app_info">
+  
+            <div class="container" data-aos="fade-up">
+              <div class="row gx-0">
+      
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="content">
+                    <h2>Architecture </h2>
+                    <p>
+                      Software architecture is crucial for our Black Hole app's development as it shapes how the app is organized and ensures it works well in the long run. It helps manage complex features like web views and navigation, making the app easier to build and maintain. A good architecture also improves the app's performance and user experience. It's like a blueprint that guides how different parts of the app work together, making it scalable, easy to understand, and ready for future improvements. In short, a strong software architecture is vital for creating a successful and adaptable mobile application like Black Hole.                  </p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                  <img src="https://media.istockphoto.com/id/1330669820/es/vector/software-de-programaci%C3%B3n-de-sistemas-de-casas-inteligentes-desarrollo-de-ingenier%C3%ADa-de.jpg?s=612x612&w=0&k=20&c=H-EUzzwivOa7YzMp43iEWRkSGBSFS4y9iZSwrCYGNPg=" class="img-fluid" alt="">
+                </div>
+      
               </div>
-
-            </article><!-- End blog entry -->
-
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <h3 class="sidebar-title">Other Patterns</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li><a href="dto.html">DTO <span>(Data Transfer Object)</span></a></li>
-                  <li><a href="facade.html">Facade</a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-            </div><!-- End sidebar -->
-
-          </div><!-- End blog sidebar -->
-
+            </div>
+      
+          </section>
+  
+            <header class="section-header">
+              <h2>patterns</h2>
+            </header>
+  
+            <div class="row gy-4">
+  
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-box blue">
+                  <h3>MVVM</h3>
+                  <p>We can evidence a use of MVVM patter in the application. This can be figured because of many reasons. This pattern allows the app to be reactive and have specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.</p>
+                  <a href="mvvm.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+  
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-box orange">
+                  <h3>DTO</h3>
+                  <p>In this project, the data transfer object (DTO) pattern simplifies accessing song information. The "song_item" DTO reads elements, easily converts to/from JSON, streamlining serialization. It improves data source interaction with its serialized properties, enhancing efficiency.</p>
+                  <a href="dto.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-box green">
+                <h3>Facade</h3>
+                <p>The "Facade" design pattern is a structural pattern used in software development, including mobile applications, to simplify and provide a unified interface for a complex set of subsystems, classes, or components. Its main goal is to hide internal complexity and provide a simpler and more cohesive way to interact with these subsystems, making the system easier to use and maintain.</p>
+                <a href="facade.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </section><!-- End Blog Single Section -->
-    
+      </section>
+  
+  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

@@ -1,5 +1,5 @@
 /**
-* Template Name: FlexStart
+* Template Name: Flutter31
 * Updated: Sep 18 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Author: BootstrapMade.com
