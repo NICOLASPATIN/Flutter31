@@ -101,9 +101,9 @@
         <ol>
           <li><a href="index.html">Home</a></li>
           <li><a href="ar2.html">Design</a></li>
-          <li>Facade</li>
+          <li>Facade (search)</li>
         </ol>
-        <h2>Facade</h2>
+        <h2>Facade (search)</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -114,92 +114,61 @@
 
         <div class="row">
 
-          <div class="col-lg-8 entries">
+          <div>
 
             <article class="entry entry-single">
 
-              <div class="entry-img">
-                <img src="assets/img/MVVM.png" alt="" class="img-fluid">
-              </div>
-
               <h2 class="entry-title">
-                <a>Enhancing App Development: The Power of MVVM Pattern</a>
+                <a>Facade </a>
               </h2>
 
               <div class="entry-content">
                 <p>
-                  We can evidence a use of MVVM patter in the application. This can be figured because of many reasons. This pattern allows the app to be reactive and have 
-                  specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.
+                  The "Facade" design pattern is a structural pattern used in software development, including mobile applications, to simplify and provide a unified interface for a complex set of subsystems, classes, or components. Its main goal is to hide internal complexity and provide a simpler and more cohesive way to interact with these subsystems, making the system easier to use and maintain.
+                  And BlackHole, the developers decided to use facade in the search bar. This choose was made in order to maintain in a monolith al the code that involves the search bar. This bar in the most of the views present, so it has a lot of functionalities that it has to manage, ones of them are: <br>
+                  •	Search inside the app, search in the youtube API and search in the spotify API, which all of them are in the search.dart file (Img 1) <br>
+                  •	 Fetch the last search the user has done (Img 1) <br>
+                    •	Get the trending search (Img 2) <br>
+                    •	Search not found (Img 2) <br>
+                    •	Add search to history (Img 2) <br>
+                    •	Use other widgets, like looking for the location in order to recommend trending music of the zone the user is (Img 3)
+                                      
                 </p>
-
-                <h3>MVVM in the Blackhole code</h3>
-                <p>
-                  1. The structure of the project shows the main components that a model view 
-                  view model design patter has. However, the project is missing the folder that 
-                  should save de view model. This view model is presented along different other 
-                  components that we will present later.
-                </p>
-                
-                <div class="code-space">
-                  <code-viewer title="main.js">
-                    class _CacheService {
-                      Map _cache = {};
-                    
-                      dynamic read(String key) {
-                        return _cache[key];
-                      }
-                    
-                      void write(String key, dynamic value) {
-                        _cache[key] = value;
-                      }
-                    
-                      void delete(String key) {
-                        _cache.remove(key);
-                      }
-                    
-                      bool contains(String key) {
-                        return _cache.containsKey(key);
-                      }
+            </article>
             
-                      void flush() {
-                        _cache.clear();
-                      }
-                    }
-                    
-                    final _CacheService cache = _CacheService();
-                  </code-viewer>
-                </div>
-  
+            <article class="entry entry-single">
+              <p>
+               <b>Image1: </b> Calling for the search in YouTube Music, YouTube main page and even in the app API (saavn) to get the music that is available inside the app
+              </p>
+              <div class="entry-imagen">
+                <img src="assets/img/Imagen1.jpg" alt="" class="img-fluid">
               </div>
+              </div>
+            </article>
 
-            </article><!-- End blog entry -->
+            <article class="entry entry-single">
+              <p>
+               <b>Image2: </b>Functions to add to the histtory, get the tranding search and nothing found function when the user searched for words
+              </p>
+              <div class="entry-imagen">
+                <img src="assets/img/Imagen2.jpg" alt="" class="img-fluid">
+              </div>
+              </div>
+            </article>
 
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <h3 class="sidebar-title">Other Patterns</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li><a href="mvvm.html">MVVM <span>(Model-View-ViewModel)</span></a></li>
-                  <li><a href="dto.html">DTO <span>(Data Transfer Object)</span></a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-            </div><!-- End sidebar -->
-
-          </div><!-- End blog sidebar -->
-
+            <article class="entry entry-single">
+              <p>
+               <b>Image3: </b> When looking for the trending music, the search.dart file calls AppLocations to know the language in which the app is for internationalize the text, which this will make that the text displays will be in the appropriate language according to the device's settings.
+              </p>
+              <div class="entry-imagen">
+                <img src="assets/img/Imagen3.jpg" alt="" class="img-fluid">
+              </div>
+              </div>
+            </article>
+            
+            
+            </div>
+          </article>
         </div>
 
       </div>
@@ -249,5 +218,7 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+
 
 </html>

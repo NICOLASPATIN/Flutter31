@@ -114,7 +114,7 @@
 
         <div class="row">
 
-          <div class="col-lg-8 entries">
+          <div>
 
             <article class="entry entry-single">
 
@@ -132,89 +132,151 @@
                   specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.
                 </p>
             </article>
+            
             <article class="entry entry-single">
-              <h3>MVVM in the Blackhole code</h3>
               <p>
                 1. The structure of the project shows the main components that a model view 
                 view model design patter has. However, the project is missing the folder that 
                 should save de view model. This view model is presented along different other 
                 components that we will present later.
               </p>
-              
-              <div class="code-space">
-                <img src="assets/img" alt="" class="img-fluid">
+              <div class="entry-imag">
+                <img src="assets/img/blackhole-4.png" alt="" class="img-fluid">
               </div>
               </div>
             </article>
+            
             <article class="entry entry-single">
-                <h3>MVVM in the Blackhole code</h3>
                 <p>
-                  1. The structure of the project shows the main components that a model view 
-                  view model design patter has. However, the project is missing the folder that 
-                  should save de view model. This view model is presented along different other 
-                  components that we will present later.
+                  <b>MODELS:</b>  The models are shown below, they are in charge of manipulating the 
+                  data access and building the DTOs that can be accessed by the other components 
+                  of the application.                  
                 </p>
                 
                 <div class="code-space">
-                  <code-viewer title="main.js">
-                    class _CacheService {
-                      Map _cache = {};
-                    
-                      dynamic read(String key) {
-                        return _cache[key];
-                      }
-                    
-                      void write(String key, dynamic value) {
-                        _cache[key] = value;
-                      }
-                    
-                      void delete(String key) {
-                        _cache.remove(key);
-                      }
-                    
-                      bool contains(String key) {
-                        return _cache.containsKey(key);
-                      }
-            
-                      void flush() {
-                        _cache.clear();
-                      }
-                    }
-                    
-                    final _CacheService cache = _CacheService();
+                  <code-viewer title="song_item_dart">
+                    import 'dart:convert';
+
+                    class SongItem {
+                      final String id;
+                      final String album;
+                      final String? albumId;
+                      final List<String> artists;
+                      final List<Map<String, String>>? artistIds;
+                      final String? albumArtist;
+                      final Duration duration;
+                      final String genre;
+                      final bool hasLyrics;
+                      final String image;
+                      final List allImages;
+                      final String? language;
+                      final String? releaseDate;
+                      final String? subtitle;
+                      final String title;
+                      final String? url;
+                      final List<String> allUrls;
+                      final int? year;
+                      final int? quality; }
                   </code-viewer>
                 </div>
-  
               </div>
+            </article>
 
-            </article><!-- End blog entry -->
+            <article class="entry entry-single" >
+              <p>
+                <b>The views:</b>The views are defined in the folder structure as Screens. These views use the view-model components, as they call the view-model for information. The views are only for displaying the information and collecting data from the user inputs. The image below shows some of the views that are implemented in the application.
+              </p>
+              
+              <div class="code-space" style="display: flex; align-items: center;">
+                <code-viewer title="home_screen.dart">
+                  @override
+                  Widget build(BuildContext context) {
+                    String name =
+                        Hive.box('settings').get('name', defaultValue: 'Guest') as String;
+                    final double screenWidth = MediaQuery.sizeOf(context).width;
+                    final bool rotated = MediaQuery.sizeOf(context).height < screenWidth;
+                    return SafeArea(
+                      child: Stack(
+                        children: [
+                          NestedScrollView(
+                            physics: const BouncingScrollPhysics(),
+                            controller: _scrollController,
+                            headerSliverBuilder: (
+                              BuildContext context,
+                              bool innerBoxScrolled,
+                            ) {
+                              return <Widget>[
+                                SliverAppBar(
+                                  expandedHeight: 135,
+                                  backgroundColor: Colors.transparent,
+                                  elevation: 0,
+                                  // pinned: true,
+                                  toolbarHeight: 65,
+                                  // floating: true,
+                                  automaticallyImplyLeading: false,
+                                  flexibleSpace: LayoutBuilder(
+                                    builder: (
+                                      BuildContext context,
+                                      BoxConstraints constraints,
+                                    ) ...
+                </code-viewer>
+                <div class="entry-image">
+                  <img src="assets/img/mvvmTheViews.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </article>
 
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <h3 class="sidebar-title">Other Patterns</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  <li><a href="dto.html">DTO <span>(Data Transfer Object)</span></a></li>
-                  <li><a href="facade.html">Facade</a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-            </div><!-- End sidebar -->
-
-          </div><!-- End blog sidebar -->
-
+            <article class="entry entry-single">
+              <p>
+                <b>MODELS:</b>  The models are shown below, they are in charge of manipulating the 
+                data access and building the DTOs that can be accessed by the other components 
+                of the application.                  
+              </p>
+              
+              <div class="code-space" style="display: flex; align-items: center;">
+                <code-viewer title="download.dart">
+                  Future<void> downloadSong(
+                    BuildContext context,
+                    String? dlPath,
+                    String fileName,
+                    Map data,
+                  ) async {
+                    Logger.root.info('processing download');
+                    progress = null;
+                    notifyListeners();
+                    String? filepath;
+                    late String filepath2;
+                    String? appPath;
+                    final List<int> bytes = [];
+                    String lyrics = '';
+                    final artname = fileName.replaceAll('.m4a', '.jpg');
+                    if (!Platform.isWindows) {
+                      Logger.root.info('Getting App Path for storing image');
+                      appPath = Hive.box('settings').get('tempDirPath')?.toString();
+                      appPath ??= (await getTemporaryDirectory()).path;
+                    } else {
+                      final Directory? temp = await getDownloadsDirectory();
+                      appPath = temp!.path;
+                    }
+                </code-viewer>
+                <code-viewer title="download.dart">
+                  class Download with ChangeNotifier {
+                    static final Map<String, Download> _instances = {};
+                    final String id;
+                  
+                    factory Download(String id) {
+                      if (_instances.containsKey(id)) {
+                        return _instances[id]!;
+                      } else {
+                        final instance = Download._internal(id);
+                        _instances[id] = instance;
+                        return instance;
+                      }
+                    }
+                </code-viewer>
+              </div>
+            </div>
+          </article>
         </div>
 
       </div>
