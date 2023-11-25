@@ -1806,6 +1806,31 @@ section {
   width: 90%;
   padding: 20px;
 }
+.blog .entry .entry-imag {
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  padding: 20px;
+}
+.blog .entry .entry-imagen {
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.blog .entry .entry-image {
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38%;
+  padding: 20px;
+}
 
 .img-fluid {
   min-width: 100%;
@@ -2492,3 +2517,7 @@ section {
 .red-highlight {
   background-color: #f6e6e6;
 }
+.articles-containeer {
+  display: flex; 
+}
+

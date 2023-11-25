@@ -114,25 +114,20 @@
 
         <div class="row">
 
-          <div class="col-lg-8 entries">
+          <div class>
 
             <article class="entry entry-single">
 
-              <div class="entry-img">
-                <img src="assets/img/MVVM.png" alt="" class="img-fluid">
-              </div>
-
               <h2 class="entry-title">
-                <a>Enhancing App Development: The Power of MVVM Pattern</a>
+                <a>Data Transfer Object in BlackHole</a>
               </h2>
 
               <div class="entry-content">
                 <p>
-                  We can evidence a use of MVVM patter in the application. This can be figured because of many reasons. This pattern allows the app to be reactive and have 
-                  specialized components for the data access, the view and the interaction between both, this improves how the app is developed and in this manner it becomes a more maintainable application over time.
+                  The data transfer object pattern can be seen in this project as for example the son_item is a DTO that has all the information regarding a song. This object is just for reading the elements inside this object and it also allows to be loaded from JSON and transformed to JSON, in this manner this object can be serialized easily. The images above present the fields of the DTO and also the methods to serialize and reserialize the object that are the toJson and fromJson respectively. The data transfer object serves as a better way to access information of the data source thanks to the representation of this information in an object that has serializable properties.
                 </p>
 
-                <h3>MVVM in the Blackhole code</h3>
+                <h3>DTO in the Blackhole code</h3>
                 <p>
                   1. The structure of the project shows the main components that a model view 
                   view model design patter has. However, the project is missing the folder that 
@@ -141,32 +136,44 @@
                 </p>
                 
                 <div class="code-space">
-                  <code-viewer title="main.js">
-                    class _CacheService {
-                      Map _cache = {};
-                    
-                      dynamic read(String key) {
-                        return _cache[key];
-                      }
-                    
-                      void write(String key, dynamic value) {
-                        _cache[key] = value;
-                      }
-                    
-                      void delete(String key) {
-                        _cache.remove(key);
-                      }
-                    
-                      bool contains(String key) {
-                        return _cache.containsKey(key);
-                      }
-            
-                      void flush() {
-                        _cache.clear();
-                      }
-                    }
-                    
-                    final _CacheService cache = _CacheService();
+                  <code-viewer title="yt_music.dart">
+                    class SongItem {
+                      final String id;
+                      final String album;
+                      final String? albumId;
+                      final List<String> artists;
+                      final List<Map<String, String>>? artistIds;
+                      final String? albumArtist;
+                      final Duration duration;
+                      final String genre;
+                      final bool hasLyrics;
+                      final String image;
+                      final List allImages;
+                      final String? language;
+                      final String? releaseDate;
+                      final String? subtitle;
+                      final String title;
+                      final String? url;
+                      final List<String> allUrls;
+                      final int? year;
+                      final int? quality;
+                      final String permaUrl;
+                      final int expireAt;
+                      final bool isYt;
+                      final String lyrics;
+                      final int? trackNumber;
+                      final int? discNumber;
+                      final bool isOffline;
+                      final bool addedByAutoplay;
+                      final bool kbps320;
+                      final int likes;
+                  </code-viewer>
+                </div>
+
+                <div class="code-space">
+                  <code-viewer title="yt_music.dart">
+                    factory SongItem.fromJson(String source) =>
+                    SongItem.fromMap(json.decode(source) as Map<String, dynamic>);
                   </code-viewer>
                 </div>
   
