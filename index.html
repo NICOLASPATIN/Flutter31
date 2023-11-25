@@ -360,6 +360,205 @@
 
         </div>
 
+  <!-- ======= Libraries used ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Libraries used</p>
+        </header>
+
+        <div class="row">
+
+
+          <div class="col-lg-12 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Audiotagger</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>This library is used by BlackHole App to tag and manage metadata for audio files. This allows its core functionality to work, which is reproducing music files through the app.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Flutter/material.dart</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>This library used the main Flutter library in order to have powerful widgets and tools for building user interfaces based on Google's Material Design. Using this library, the BlackHole App makes sure to follow the material design guidelines that Google has created.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Flutter_gen/gen_l10n/ <br> app_localizations.dart</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>BlackHole uses this library to access automatically generated translations for all the available languajes from the source code.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Hive/hive.dart</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>The app uses Hive, a real-time database that also has local storage for Flutter. BlackHole uses Hive for efficiently storing data on the device, such as application settings or user data.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Audio_service/audio_service.dart</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>BlackHole uses this library for integrating easily audio into the applications. This library is necessary to reproduce the music selected from Youtube or Spotify in the background.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Get_it/get_it.dart</h3>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <p>This library has the service of wrapper and dependency injection solution for Flutter. BlackHole app uses this for easily manage dependencies in the application, which makes having a better structure of code overall. </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-12">
+          <div class="code-space" >
+            <code-viewer title="download.dart">
+              import 'package:audiotagger/audiotagger.dart'; 
+              import 'package:flutter/material.dart'; 
+              import 'package:flutter_gen/gen_l10n/app_localizations.dart'; 
+              import 'package:hive/hive.dart'; 
+              import 'package:audio_service/audio_service.dart'; 
+              import 'package:get_it/get_it.dart';
+
+            </code-viewer>
+          </div>
+        </div>
+        
+        <!-- Feature Tabs -->
+        <div id="appinfo_value" class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-7">
+            <h3></h3>
+
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Value</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Open-Source</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Stats</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1">
+                <p>Blackhole sets itself apart in the music streaming industry by offering unique functionalities and a fresh approach to standard features. It provides users with the flexibility to modify song playback speed, free downloads, and seamless integration with popular platforms like Spotify and YouTube Music, all while sourcing music from a diverse array of channels.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Advanced Playback Controls</h4>
+                </div>
+                <p>Blackhole offers advanced playback control features, allowing users to adjust the speed of songs to suit their listening preferences. This customization enhances the user experience, catering to varied musical tastes and scenarios.</p>
+
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Seamless Integration and Free Downloads</h4>
+                </div>
+                <p>Users can effortlessly download their favorite tracks and integrate playlists from platforms like Spotify and YouTube Music, all at no cost. This feature bridges the gap between multiple streaming services, providing a comprehensive music collection in one place.</p>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-pane fade" id="tab2">
+                  <p>At the heart of Blackhole's innovation lies its open-source nature, inviting a community-driven approach to music streaming. This openness fosters continuous improvement and customization, enabling a platform that evolves with its users' needs.</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Community-Driven Development</h4>
+                  </div>
+                  <p>Leveraging the power of open-source, Blackhole benefits from the collective expertise of developers worldwide. This collaboration leads to innovative features and robust performance, tailored by a community passionate about music and technology.</p>
+              
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Customizable User Experience</h4>
+                  </div>
+                  <p>Thanks to its open-source framework, Blackhole offers unparalleled customization options. Users and developers can personalize the app, from interface tweaks to adding new functionalities, making each experience uniquely tailored.</p>
+                </div>
+              </div>
+              
+              <div class="tab-pane fade show" id="tab3">
+                <p>Along with it's open-source nature, Blackhole has a wide range of users and developers</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <a href="https://sangwan5688.github.io/#:~:text=Design%20by%20GeekSpark"><h4>Downloads</h4></a>
+                </div>
+                <p>With more than <a href="https://sangwan5688.github.io/#:~:text=Design%20by%20GeekSpark">2 million downloads</a>, Blackhole has a large user base. This popularity is a testament to the app's innovative features.</p>
+
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Sponsors and contributors</h4>
+                </div>
+                <p>The main contributor of the repo is: <a href="https://github.com/Sangwan5688">Sangwan5688</a> and the repo has more than 100 contributors, however, only 19 are constantly improving the application.</p>
+
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Languages</h4>
+                </div>
+                <p>The languages used are Dart in a 92%, C++ around 5%. It also has an important percentage of configuration files like JSON, CMake or XML.</p>
+
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Code</h4>
+                </div>
+                <p>It has 38,873 lines of code, 6,307 comments and 262 files. Also, the project has 1101 commits </p>
+
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Structure</h4>
+                </div>
+                <p>Blackhole repository holds only one branch, but around 900 forks and 700 deployments.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <img src="assets/img/blackhole-music.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
         <!-- Feature Icons -->
         <div id="appinfo_bqs" class="row feature-icons" data-aos="fade-up">
           <h3>Business Questions</h3>
@@ -418,6 +617,9 @@
         </div>
 
       </div>
+
+    </section>
+    </div>
 
     </section>
 
